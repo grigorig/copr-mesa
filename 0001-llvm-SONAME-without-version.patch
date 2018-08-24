@@ -1,0 +1,11 @@
+--- mesa-6ce5504/configure.ac.old	2017-10-23 16:33:22.506528902 +0200
++++ mesa-6ce5504/configure.ac	2017-10-23 16:39:05.340008464 +0200
+@@ -2645,7 +2645,7 @@
+     dnl ourselves.
+     dnl (See https://llvm.org/bugs/show_bug.cgi?id=6823)
+     dnl We can't use $LLVM_VERSION because it has 'svn' stripped out,
+-    LLVM_SO_NAME=LLVM-`$LLVM_CONFIG --version`
++    LLVM_SO_NAME=LLVM
+     AS_IF([test -f "$LLVM_LIBDIR/lib$LLVM_SO_NAME.$IMP_LIB_EXT"], [llvm_have_one_so=yes])
+ 
+     if test "x$llvm_have_one_so" = xyes; then
